@@ -12,12 +12,12 @@ import io.cucumber.testng.CucumberOptions;
 @Test
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-	  plugin = {"pretty"},
 	  monochrome=false, 
 	  //tags = "@feature01",
 	  features = {"src/test/resources/features/Batch/"}, 
-	  glue= {"stepdefinition","AppHooks"})
-
+	  glue= {"stepdefinition","AppHooks"},
+	  plugin = { "pretty", "html:target/cucumber-reports.html", "json:target/cucumber-html-reports/cucumber.json","rerun:target/failed_scenarios.txt" })
+		//	  plugin = { "pretty"})
 public class runner extends AbstractTestNGCucumberTests{
 
 }
