@@ -212,7 +212,7 @@
 				<configuration>
 					<includes>
 						<include>**/runner.java</include>
-						<include>**/ParallelRun.java</include>
+					<!--	<include>**/ParallelRun.java</include>-->
 					</includes>
 					<parallel>methods</parallel>
 					<threadCount>4</threadCount>
