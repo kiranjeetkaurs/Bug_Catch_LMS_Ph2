@@ -43,7 +43,7 @@ public class DriverFactory {
 		return getDriver();
 	}
 	
-	//!!!!!!!!! !!!!!!!!!!!@@@@@@@@@@@This is used to get the driver with threadlocal
+	//!!!!!wwwwwwww!!!! !!!!!!!!!!!@@@@@@@@@@@This is used to get the driver with threadlocal
 	public static synchronized WebDriver getDriver() {
 		return tlDriver.get();
 
